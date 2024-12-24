@@ -20,6 +20,9 @@ try
         PortfolioTracker.Logging.LoggerConfigurationExtensions.SetupLogger(context.Configuration, loggerConfiguration);
     }, preserveStaticLogger: true);
 
+    // Add services to the container.
+    builder.Services.AddServices();
+    
     builder.Services.AddHealthChecks(builder.Configuration);
 
     Log.Debug("Adding Controllers");

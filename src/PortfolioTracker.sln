@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioTracker.Domain", "PortfolioTracker.Domain\PortfolioTracker.Domain.csproj", "{8009B3F9-DF4F-449F-9394-0BF7B159E95E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioTracker.CsvParser", "PortfolioTracker.CsvParser\PortfolioTracker.CsvParser.csproj", "{0F3174F5-F3EF-4E24-9144-28DDFD647EE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,5 +31,9 @@ Global
 		{8009B3F9-DF4F-449F-9394-0BF7B159E95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8009B3F9-DF4F-449F-9394-0BF7B159E95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8009B3F9-DF4F-449F-9394-0BF7B159E95E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F3174F5-F3EF-4E24-9144-28DDFD647EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3174F5-F3EF-4E24-9144-28DDFD647EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3174F5-F3EF-4E24-9144-28DDFD647EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3174F5-F3EF-4E24-9144-28DDFD647EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

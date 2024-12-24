@@ -1,11 +1,19 @@
 using Asp.Versioning;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.OpenApi.Models;
+using PortfolioTracker.CsvParser.Extensions;
 
 namespace PortfolioTracker.Api.Extensions;
 
 internal static class ServiceCollectionExtensions
 {
+    public static IServiceCollection AddServices(this IServiceCollection services)
+    {
+        services.AddCsvParsing();
+        
+        return services;
+    }
+    
     public static IServiceCollection AddApiDefinition(this IServiceCollection services)
     {
         services.AddApiVersioning(options =>

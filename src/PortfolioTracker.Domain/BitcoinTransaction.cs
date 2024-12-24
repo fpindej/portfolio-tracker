@@ -12,6 +12,8 @@ public class BitcoinTransaction
 
     public decimal? FiatPrice { get; set; }
 
+    public decimal? FiatFee { get; set; }
+
     public string? FiatCurrency { get; set; }
 
     public string? Notes { get; set; }
