@@ -1,0 +1,23 @@
+services:
+  portfolio-tracker-api:
+    build:
+      context: ./src/PortfolioTracker.Api
+      dockerfile: Dockerfile
+    container_name: portfolio-tracker-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5001:8080"
+    restart: unless-stopped
+    networks:
+      - portfolio-tracker-network
+
+networks:
+  portfolio-tracker-network:
+    driver: bridge
+    name: portfolio-tracker-network
+
+volumes:
+  portfolio_db_data:
+    driver: local
+    name: portfolio-tracker-db-data
