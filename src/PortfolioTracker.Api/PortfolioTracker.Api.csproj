@@ -14,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\PortfolioTracker.Domain\PortfolioTracker.Domain.csproj" />
         <ProjectReference Include="..\PortfolioTracker.Logging\PortfolioTracker.Logging.csproj"/>
     </ItemGroup>
 
